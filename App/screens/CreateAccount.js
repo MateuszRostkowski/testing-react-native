@@ -3,6 +3,7 @@ import { ScrollView, Text, TouchableOpacity, StyleSheet, View } from 'react-nati
 
 import { TextField, ErrorText } from '../components/Form'
 import { Button } from '../components/Button'
+import { Counter } from '../components/Counter'
 
 const styles = StyleSheet.create({
   textBlock: {
@@ -88,6 +89,7 @@ const CreateAccount = ({ navigation }) => {
           <Text style={[styles.text, styles.link]}>Sign in.</Text>
         </TouchableOpacity>
       </View>
+      <Counter />
     </ScrollView>
   )
 }
